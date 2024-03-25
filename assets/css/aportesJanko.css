@@ -1,0 +1,21 @@
+#aportes {
+  text-align: center;
+  margin: 10px 0 40px 0;
+}
+
+#aportes h2{
+    color: #034701;
+}
+
+#aportes .franja-objetivos {
+  background-color: #034701;
+  color: #ffffff;
+  font-style: italic;
+  padding: 10px 0;
+  margin: 20px 0 40px 0;
+}
+
+#aportes .imagenes img{
+    height: 200px;
+    margin: 15px;
+}

@@ -1,0 +1,124 @@
+main .about {
+  background-color: #75b628;
+  color: #034701;
+  text-align: center;
+  padding: 15px 0;
+}
+
+main .about h2 {
+  font-size: 26px;
+}
+
+main .about p {
+  color: #ffffff;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main .box-video {
+  display: flex;
+}
+
+main .box-video .txt-video {
+  width: auto;
+}
+
+main .box-video .video {
+  display: none;
+}
+
+main .box-video .txt-video {
+  width: 50%;
+  height: 400px;
+  text-align: center;
+  background-color: #034701;
+  padding: 120px 100px 100px 100px;
+}
+
+main .box-video .txt-video p {
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+main .box-video .txt-video button {
+  color: #034701;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #75b628;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  padding: 10px 40px;
+}
+
+main .box-video .txt-video button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #034701;
+}
+
+hr {
+  margin: 20px;
+  border: 1px solid #034701;
+}
+
+@media only screen and (max-width: 600px) {
+  main .box-video .txt-video {
+    width: auto;
+  }
+
+  main .box-video .video {
+    display: none;
+  }
+
+  main .box-video .txt-video {
+    padding: 120px 100px 100px 100px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main .box-video .txt-video {
+    width: auto;
+  }
+
+  main .box-video .video {
+    display: none;
+  }
+
+  main .box-video .txt-video {
+    padding: 120px 100px 100px 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .box-video .txt-video {
+    width: auto;
+  }
+
+  main .box-video .video {
+    display: none;
+  }
+
+  main .box-video .txt-video {
+    padding: 120px 100px 100px 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main .box-video .txt-video {
+    width: 50%;
+    height: 400px;
+    padding: 120px 50px 100px 50px;
+    text-align: center;
+    background-color: #034701;
+  }
+
+  main .box-video .video {
+    width: 50%;
+  }
+
+  main .box-video .video {
+    display: initial;
+  }
+}

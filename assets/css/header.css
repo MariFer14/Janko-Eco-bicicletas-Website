@@ -1,0 +1,142 @@
+.header-content {
+  display: grid;
+  grid-template-areas: "logo navbar directorio";
+  align-items: center;
+  justify-content: space-between;
+  background-color: #034701;
+}
+
+.header-logo {
+  grid-area: logo;
+}
+
+.header-logo img {
+  width: 120px;
+  margin: 5px 25px;
+}
+
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar li a {
+  font-size: 18px;
+  display: block;
+  margin: 10px 20px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.navbar li a:hover{
+  color: #75b628;
+  transform: scale(0.9);
+}
+
+.input-wrapper {
+  display: none;
+}
+
+.bg-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url(../img/F5MKGZOSQVD4NIVOKGP7U2MZ5Y.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+.bg-hero h1 {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Mochiy Pop P One", sans-serif; 
+  text-align: center;
+  padding-top: 190px;
+  text-shadow: 1px 1px 4px #000000;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-content {
+    grid-template-areas:
+      "logo"
+      "navbar"
+      "directorio";
+  }
+
+  .header-logo {
+    text-align: center;
+  }
+
+  .navbar {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  .bg-hero h1{
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .input-wrapper {
+    display: initial;
+    grid-area: directorio;
+    margin: 20px;
+    position: relative;
+  }
+
+  .input-wrapper input {
+    width: 250px;
+    padding: 8px 20px 8px 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #75b628;
+    color: #034701;
+  }
+
+  ::placeholder {
+    color: #034701;
+  }
+
+  .input-icon {
+    color: #034701;
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-content {
+    grid-template-areas:
+      "logo"
+      "navbar"
+      "directorio";
+    justify-content: center;
+  }
+
+  .header-logo {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .bg-hero h1{
+    font-size: 30px;
+  }
+
+  .navbar {
+    margin-bottom: 20px;
+  }
+
+  .input-wrapper{
+    text-align: center;
+  }
+
+  .input-wrapper input{
+    margin-bottom: 20px;
+  }
+}
